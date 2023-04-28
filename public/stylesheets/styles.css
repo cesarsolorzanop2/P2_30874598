@@ -71,7 +71,6 @@ h1 {
 .left {
     width: 50%;
     background-color: #19376D;
-    height: 650px;
     padding: 2rem;
 
 }
@@ -84,7 +83,6 @@ h1 {
 .right {
     width: 100%;
     padding: 2rem;
-    height: 650px;
 }
 
 hr {
@@ -174,6 +172,7 @@ hr {
     }
 }
 
+
 .button {
     display: flex;
     align-items: center;
@@ -207,6 +206,3 @@ button {
 textarea {
     resize: none;
 }
-
-
-    
