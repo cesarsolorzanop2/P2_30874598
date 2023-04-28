@@ -6,92 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum(VITAE)</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="header_content">
-            <img src="images/carlo.jpg" alt="yo">
-            <span class="effect"><h1>Carlos</span> <span class="effect">Solorzano</h1></span>
+            <img src="/images/carlo.jpg" alt="yo">
+            <h1>Carlos Solorzano</h1>
         </div>
     </header>
     <main class="main">
         <div class="left">
-            <p class="title"><b>CONTACTO</b></p>
+            <p class="title">CONTACTO</p>
             <hr>
             <br>
             <div class="phone">
-                <img src="images/phone-call-svgrepo-com.svg" alt="phone" class="icon">
                 <p>0412-8842252</p>
             </div>
             <div class="email">
-                <img src="images/envelope-svgrepo-com.svg" alt="email" class="icon">
                 <p>csolorzanosilva@gmail.com</p>
             </div>
             <div class="address">
-                <img src="images/placeholder-svgrepo-com.svg" alt="address" class="icon">
                 <p>San Juan de los Morros, Guarico</p>
             </div>
             <br>
-            <p class="title"><b>IDIOMAS</b></p>
+            <p class="title">IDIOMAS</p>
             <hr>
             <br>
             <p>Español: Nativo</p>
             <br>
-            <p class="title"><b>APTITUDES</b></p>
+            <p class="title">APTITUDES</p>
             <hr>
             <br>
-            <p class="after">Inteligencia emocional</p>
-            <p class="after">Espiritu crítico</p>
-            <p class="after">Trabajo en equipo</p>
-            <p class="after">Capacidad analítica</p>
-            <p class="after">Habilidades físicas</p>
+            <p>Inteligencia emocional</p>
+            <p>Espiritu crítico</p>
+            <p>Trabajo en equipo</p>
+            <p>Capacidad analítica</p>
+            <p>Habilidades físicas</p>
             <br>
-            <p class="title"><b>HABILIDADES</b></p>
+            <p class="title">HABILIDADES</p>
             <hr>
             <br>
-            <div class="html">
-                <p>HTML</p>
-                <div class="yop _html">
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    
-                </div>
-            </div>
-            <div class="html">
-                <p>CSS</p>
-                <div class="yop _css">
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    <div class="white"></div>
-                    
-                </div>
-            </div>
-            
-            <div class="html">
-                <p>Javascript</p>
-                <div class="yop _js">
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    <div class="white blue"></div>
-                    <div class="white"></div>
-                    <div class="white"></div>
-                    <div class="white"></div>
-                    
-                </div>
-            </div>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Javascript</p>
         </div>
         <div class="right">
-            <p class="title"><b>PERFIL</b></p>
+            <p class="title">PERFIL</p>
             <hr><br>
             <p><b>Nombre:</b> Carlos Daniel</p>
             <p><b>Apellido:</b> Solorzano Silva</p>
@@ -99,19 +70,33 @@
             <p><b>Edad:</b> 19</p>
             <p><b>Sexo: </b>Hombre</p>
             <br>
-            <p class="title"><b>EXPERIENCIA LABORAL</b></p>
+            <p class="title">EXPERIENCIA LABORAL</p>
             <hr>
             <br>
             <p>Especialista en Ventas en Compunic F.P</p>
             <br>
-            <p class="title"><b>FORMACION</b></p>
+            <p class="title">FORMACION</p>
             <hr>
             <br>
             <p><b>Primaria</b> <br>U.N.B Juan Germán Roscio</p>
             <br>
             <p><b>Secundaria</b> <br>U.E.N Beatríz Rodríguez</p>
             <br>
-            <p><b>Universidad</b> <br>U.E.N Romulo Gallegos</p>
+            <p><b>Universidad</b> <br>U.E.N Romulo Gallegos</p><br>
+            <hr><br>
+            <form action="/mensaje" method="POST">
+                <p>¡CONTACTAME!</p><br>
+                <label for="">Nombre</label>
+                <input type="text" name="nombre" autocomplete="off" required><br>
+                <label for="">Correo</label>
+                <input type="email" name="email" autocomplete="off" required><br>
+                <label for="">Comentario</label>
+                <textarea id="" cols="30" name="mensaje" rows="10" required></textarea><br>
+                <div class="button">
+                    <br>
+                    <button>Enviar</button>
+                </div>
+            </form>
         </div>
     </main>
 </body>
