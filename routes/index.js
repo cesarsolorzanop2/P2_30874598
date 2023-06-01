@@ -33,12 +33,8 @@ sqlQuery.run(tableContact, err => {
 
 
 router.post('/mensaje', async (req, res) => {
-  let clientIP = req.headers["x-forwarded-for"];
-  if (clientIP) {
-    let list = clientIP.split(",");
-    clientIP = list[list.length - 1];
-  }
-
+  const clientIP = req.headers['x-forwarded-for']?.split(',').shift() || req.socket?.remoteAddress;
+  
   let today = new Date();
   let hours = today.getHours();
   let minutes = today.getMinutes();
